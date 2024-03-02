@@ -1,0 +1,649 @@
+:root {
+    --dark-color: #000000;
+    --light-color: #f0f0f0;
+    --blackish-red-color: #FF33331A;
+
+    --red--color: #be0732;
+    --text-color: #00000066;
+    --white-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.wrap-wrapper {
+    padding: 0 100px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-color);
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+section {
+    padding-top: 80px;
+}
+
+section p {
+    color: var(--text-color);
+}
+
+/* ########## Button styling######### */
+a.btn {
+    display: inline-block;
+    background: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 62px;
+    padding: 16px 54px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 400ms;
+    cursor: pointer;
+}
+
+section a.btn {
+    display: inline-block;
+}
+
+a.btn.cyan {
+    background: var(--white-color);
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--light-color);
+}
+
+a.btn:hover {
+    background: var(--light-color);
+    cursor: pointer;
+}
+
+a.btn.cyan:hover {
+    background: var(--text-color);
+}
+
+
+
+/* ############## Top ############3 */
+.home {
+    padding: 0;
+}
+
+.top {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.top p {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: var(--white-color);
+}
+
+.top .first-para {
+    margin-left: 435px;
+}
+
+.top .top-span {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.top .cross {
+    margin-left: 300px;
+}
+
+
+/* ############### Navbar styling ########## */
+
+.nav-items {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-items .nav-head h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-box input {
+    width: 610px;
+    border-radius: 62px;
+    padding: 12px 16px;
+    background: #f0f0f0;
+    border: none;
+}
+
+input[type=text] {
+    background-image: url(./images/search.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.left-img {
+    display: flex;
+    gap: 14px;
+}
+
+
+/* ############### hero styling ########## */
+
+.hero-container {
+    padding: 0;
+    position: relative;
+    background: var(--light-color);
+    z-index: -33;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-position: center;
+    /* background-size: cover; */
+    /* background-position: center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.left {
+    width: 45%;
+    padding-top: 103px;
+    padding-bottom: 116px;
+}
+
+.left .left-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-bottom .bottom-content:not(:first-child){
+    padding-left: 32px;
+    border-left: 1px solid #ddd;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.header h1 {
+    margin-bottom: 32px;
+}
+
+.header p {
+    margin-bottom: 32px;
+}
+
+.star-container .star1 {
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    top: 86px;
+    right: 81px;
+}
+
+.star-container .star2 {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 300px;
+    right: 650px;
+}
+
+/* ################### Brands section########## */
+.brands-section {
+    background: var(--dark-color);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.brands-section .brands-container img {
+    height: 32px;
+}
+
+.brands-section .brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .brands-section .brands-line-1 {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+  }
+  
+  .brands-section .brands-line-2 {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+  } */
+
+
+/* ############## new Arrival ############### */
+
+.star {
+    color: #FFC633;
+    font-size: 20px;
+}
+
+.half-star {
+    background: linear-gradient(to right, gold 50%, gray 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ############### blog card ############### */
+
+.blog-card-likes .price{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.blog-card-likes .grey-card {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: line-through;
+    color:#00000066;
+    margin-left: 10px;
+}
+
+.blog-card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.blog-card-info .rating {
+    font-size: 14px;
+}
+
+.blog-card-likes .red-card {
+    background: #FF33331A;
+    color: #ff3333;
+    border-radius: 62px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* ################### */
+#new-arrival{
+    padding-top: 72px;
+}
+.display-section h2{
+    text-align: center;
+}
+
+.display-section .display-items{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-card-image img{
+    width: 295px;
+    height: 298px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    margin-top: 55px;
+}
+
+.blog-card h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.blog-card{
+    width:296px;
+}
+
+
+.view-btn{
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 80px;
+}
+
+#top-selling{
+    padding-top: 64px;
+}
+
+#top-selling .btn2{
+    margin-bottom: 80px;
+}
+
+
+
+/* ############### Browse section######## */
+#browse{
+    padding-top: 0;
+}
+
+.masonry {
+    background: #ddd;
+    border-radius: 40px;
+    padding:0 64px 76px 64px;
+}
+.masonry h2{
+    text-align: center;
+    margin-bottom: 64px;
+    padding-top: 70px;
+    font-size: 48px;
+}
+
+.browse-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.browse-items .item2{
+    grid-column: 2/span 2;
+}
+.browse-items .item3{
+    grid-column: 1/span 2;
+}
+
+.browse-item{
+    position: relative;
+}
+
+.browse-item img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.browse-item h3{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.browse-item .browse1,
+.browse-item .browse2,
+.browse-item .browse3,
+.browse-item .browse4{
+    position: absolute;
+    top: 25px;
+    left: 36px;
+}
+
+
+/* ############### Footer styling############ */
+#footer{
+    background: var(--light-color);
+}
+
+.footer-container{
+    position: relative;
+    margin-top: 170px;
+
+}
+.update-container{
+    width: 86%;
+    height: 180px;
+    background: var(--dark-color);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 212px;
+    padding-left: 64px;
+    padding-right: 64px;
+    border-radius: 20px;
+    position: absolute;
+    top: -25%;
+
+}
+
+.update-container .update-head{
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+.update-head h2{
+    color: var(--white-color);
+}
+
+.update-container .update-search{
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.update-container .update-search{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.update-search input{
+    width: 349px;
+    border-radius: 62px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.update-search input[type=email] {
+    background-image: url(./images/email.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    text-align: left;
+}
+
+
+
+
+/* ################ Foot styling ############# */
+
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.foot .footer-image{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-image img{
+    background: var(--white-color);
+    padding: 10px 6px;
+    border-radius: 6px;
+}
+
+/* ############################## */
+
+
+.footer-boxes{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 120px;
+    padding-top: 130px;
+    margin-bottom: 50px;
+}
+
+.footer-box ul{
+    list-style: none;
+}
+
+.footer-box h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+.footer-box .footer-head{
+    font-size: 33.45px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.footer-box h3{
+    margin-bottom: 20px;
+}
+
+.first .social-media li:first-child{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+
+.ul li{
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.social-media li i{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+}
+
+.social-media li p{
+    font-size: 14px;
+}
+
+.footer-box ul li{
+    color: var(--text-color);
+}
+
+
+
+
+/* ############### Review Styling#############3 */
+
+.review-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.review-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    align-content: start;
+    gap: 20px;
+    
+}
+
+.customer-review{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ddd;
+    padding: 28px 32px;
+    border-radius: 20px;
+}
+
+.customer-review h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.customer-review h3 img{
+    width: 20px;
+    height: 20px;
+}
+
+.customer-review p{
+    line-height: 22px;
+}
+
+.star-div{
+    margin-bottom: 15px;
+    width: 138px;
+}
+
+.slide-btn a{
+    padding-left: 16px;
+    transition: all 0.3s ease;
+}
+
+.slide-btn a:hover{
+    transform: scale(1.02);
+    background: #8e7f83;
+    border-radius: 40px;
+    padding: 5px;
+}
+
