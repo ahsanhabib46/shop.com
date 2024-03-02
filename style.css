@@ -610,7 +610,9 @@ input[type=text] {
 .slick-slide{
     margin-left: 10px;
     margin-right: 10px;
+
 }
+
 
 .customer-review{
     width: 400px;
@@ -629,6 +631,7 @@ input[type=text] {
 .customer-review h3 img{
     width: 20px;
     height: 20px;
+    display: inline-block;
 }
 
 .customer-review p{
