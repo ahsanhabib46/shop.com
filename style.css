@@ -146,8 +146,14 @@ a.btn.cyan:hover {
     margin-bottom: 24px;
     height: 48px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 40px;
+}
+
+.nav-items .list,
+.nav-items .search-box,
+.nav-items .nav-head{
+    margin-right: 40px;
 }
 
 .nav-items .nav-head h2 {
@@ -187,6 +193,40 @@ input[type=text] {
     display: flex;
     gap: 14px;
 }
+
+/* ############### Mobile Nav ########### */
+.hide {
+    display: none;
+}
+
+.mobile-nav .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    z-index: 999;
+    padding:0 20px;
+}
+
+.sidebar li {
+    width: 100%;
+    font-size: 24px;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
 
 
 /* ############### hero styling ########## */
@@ -652,3 +692,44 @@ input[type=text] {
     padding: 5px;
 }
 
+
+
+/* ################# Media Queries ############ */
+
+@media (max-width:600px) {
+
+    .wrapper {
+        max-width: 600px;
+    }
+
+    .wrap-wrapper {
+        padding: 0 16px;
+    }
+
+    .nav-head{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .nav-items .list {
+        display: none;
+    }
+
+    .nav-items {
+        justify-content:start;
+    }
+
+    .left-img{
+        margin-left: 96px;
+    }
+
+}

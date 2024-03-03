@@ -11,12 +11,14 @@
 
     <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 
 <body>
@@ -36,30 +38,48 @@
 
     <nav class="wrapper" id="nav-menu">
         <div class="wrap-wrapper nav-items">
+            <div class="mobile-nav">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="#home">Shop &caron;</a></li>
+                    <li><a href="#top-selling">On Sale</a></li>
+                    <li><a href="#new-arrival">New Arrival</a></li>
+                    <li><a href="#brands">Brands</a></li>
+
+                </ul>
+            </div>
             <div class="nav-head">
+                <span class="menu-button hide" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="50" viewBox="0 96 960 960" width="50">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg></a></span>
                 <h2>SHOP.CO</h2>
             </div>
             <div class="list">
                 <ul>
-                    <li><a href="#">Shop &caron;</a></li>
-                    <li><a href="#">On Sale</a></li>
-                    <li><a href="#">New Arrival</a></li>
-                    <li><a href="#">Brands</a></li>
+                    <li><a href="#home">Shop &caron;</a></li>
+                    <li><a href="#top-selling">On Sale</a></li>
+                    <li><a href="#new-arrival">New Arrival</a></li>
+                    <li><a href="#brands">Brands</a></li>
                 </ul>
             </div>
             <div class="search-box">
                 <input type="text" placeholder="Search for Products">
             </div>
             <div class="left-img">
-                <img src="./images/nav-icon1.png" alt="">
-                <img src="./images/nav-icon2.png" alt="">
+                <img class="hide" src="./images/nav-icon3.png" alt="search-icon">
+                <img src="./images/nav-icon1.png" alt="cart icon">
+                <img src="./images/nav-icon2.png" alt="profile icon">
             </div>
         </div>
     </nav>
 
-
     <!-- ############ hero section##########  -->
-    <header class="hero-container wrapper">
+    <header class="hero-container wrapper" id="home">
 
         <div class="wrap-wrapper hero-wrapper">
             <div class="left">
@@ -99,7 +119,7 @@
 
     <!-- ########## Brands Section###########  -->
 
-    <section class="brands-section wrapper">
+    <section class="brands-section wrapper" id="brands">
 
         <div class="brands-container wrap-wrapper">
             <!-- <div class="brands-line-1"> -->
@@ -336,41 +356,46 @@
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                 </div>
                 <h3>Sarah.M <span><img src="./images/icon.png" alt=""></span></h3>
-                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+                    elegant dresses, every piece I've bought has exceeded my expectations.”</p>
             </div>
             <div class="customer-review review2">
                 <div class="star-div star">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                 </div>
                 <h3>Alex K. <span><img src="./images/icon.png" alt=""></span></h3>
-                <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly .</p>
+                <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.
+                    The range of options they offer is truly .</p>
             </div>
             <div class="customer-review review3">
                 <div class="star-div star">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                 </div>
-                <h3>Jamel L  <span><img src="./images/icon.png" alt=""></span></h3>
-                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse</p>
+                <h3>Jamel L <span><img src="./images/icon.png" alt=""></span></h3>
+                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                    Shop.co. The selection of clothes is not only diverse</p>
             </div>
             <div class="customer-review review4">
                 <div class="star-div star">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                 </div>
                 <h3>Mooen <span><img src="./images/icon.png" alt=""></span></h3>
-                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse </p>
+                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                    Shop.co. The selection of clothes is not only diverse </p>
             </div>
             <div class="customer-review review5">
                 <div class="star-div star">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                 </div>
                 <h3>Sarah.M <span><img src="./images/icon.png" alt=""></span></h3>
-                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+                    elegant dresses, every piece I've bought has exceeded my expectations.”</p>
             </div>
 
 
         </div>
 
-     </section>
+    </section>
 
     <!-- ################# Footer starts ########  -->
 
@@ -394,9 +419,10 @@
                 <div class="footer-box first">
                     <p class="footer-head">SHOP.CO</p>
                     <ul class="social-media">
-                        <li><p>We have clothes that suits your style and which you are proud to
-                            wear.From women to
-                            men. </p>
+                        <li>
+                            <p>We have clothes that suits your style and which you are proud to
+                                wear.From women to
+                                men. </p>
                         </li>
                         <li>
                             <a href="#"><i class="fab fa-facebook "></i></a>
@@ -446,21 +472,21 @@
             <hr>
         </div>
 
-        
+
         <!-- <div class="wrapper"> -->
-            
-            <div class="wrap-wrapper foot">
-                
-                <p class="theme-color-font">© 2000-2021, All rights reserved</p>
-                <div class="footer-image">
-                    <a><img src="./images/foot1.png" alt="visa logo"></a>
-                    <a><img src="./images/foot2.png" alt="mastercard logo">
-                    </a>
-                    <a><img src="./images/foot3.png" alt="paypal logo"></a>
-                    <a><img src="./images/foot4.png" alt="dot pay logo"></a>
-                    <a><img src="./images/foot5.png" alt="G-pay logo"></a>
-                </div>
+
+        <div class="wrap-wrapper foot">
+
+            <p class="theme-color-font">© 2000-2021, All rights reserved</p>
+            <div class="footer-image">
+                <a><img src="./images/foot1.png" alt="visa logo"></a>
+                <a><img src="./images/foot2.png" alt="mastercard logo">
+                </a>
+                <a><img src="./images/foot3.png" alt="paypal logo"></a>
+                <a><img src="./images/foot4.png" alt="dot pay logo"></a>
+                <a><img src="./images/foot5.png" alt="G-pay logo"></a>
             </div>
+        </div>
         <!-- </div> -->
 
     </footer>
@@ -481,16 +507,16 @@
             });
         });
         </script> -->
-        <script>$('.review-container').slick({
+    <script>$('.review-container').slick({
             dots: true,
             infinite: true,
             speed: 300,
             slidesToShow: 4,
             centerMode: true,
             variableWidth: true
-          });</script>
-        
-     
+        });</script>
+
+
 
 </body>
 
