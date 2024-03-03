@@ -141,20 +141,16 @@ a.btn.cyan:hover {
 
 /* ############### Navbar styling ########## */
 
-.nav-items {
+.desktop-nav {
     margin-top: 24px;
     margin-bottom: 24px;
     height: 48px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
-.nav-items .list,
-.nav-items .search-box,
-.nav-items .nav-head {
-    margin-right: 40px;
-}
 
 .nav-items .nav-head h2 {
     font-size: 32px;
@@ -199,7 +195,7 @@ input[type=text] {
     display: none;
 }
 
-.mobile-nav .sidebar {
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -383,16 +379,21 @@ input[type=text] {
     text-align: center;
 }
 
-.display-section .display-items {
+/* .display-section .display-items {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     gap: 20px;
+} */
+.display-section .display-items{
+    display: grid;
+    grid-template-columns: repeat(4,298px);
+    gap: 18px;
 }
 
 .blog-card-image img {
-    width: 295px;
+    width: 298px;
     height: 298px;
     border-radius: 20px;
     margin-bottom: 16px;
@@ -650,12 +651,6 @@ input[type=text] {
 
 }
 
-.slick-slide {
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-
 
 .customer-review {
     width: 400px;
@@ -663,6 +658,8 @@ input[type=text] {
     border: 1px solid #ddd;
     padding: 28px 32px;
     border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .customer-review h3 {
@@ -719,6 +716,10 @@ input[type=text] {
         gap: 16px;
     }
 
+    .nav-items{
+        justify-content: space-between;
+    }
+
     .hide {
         display: block;
     }
@@ -754,6 +755,13 @@ input[type=text] {
 
 
     /* ############## Hero section############# */
+    .header h1{
+        width: 50%;
+        font-size: 36px;
+        line-height: 32px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
     .hero-wrapper {
         flex-direction: column;
         align-items: start;
@@ -761,10 +769,12 @@ input[type=text] {
 
     .left {
         width: 100%;
+        margin-top: 40px;
     }
 
     .left .header p {
         width: 73%;
+        margin-bottom: 24px;
     }
 
     .left .btn {
@@ -773,24 +783,25 @@ input[type=text] {
     }
 
     .left-bottom {
-        padding: 20px 40px 30px 40px;
+        padding: 0;
         gap: 12px;
     }
 
-    .left-bottom .bottom1 {
-        padding-left: 10px;
+    .left-bottom .bottom-content.bottom1 {
+        margin-left: 30px;
+        justify-self: center;
     }
 
-    .left-bottom .bottom2 {
+    .left-bottom .bottom-content.bottom2 {
         grid-column: 2/4;
         justify-self: center;
-        padding-left: 120px !important;
     }
 
-    .left-bottom .bottom3 {
+    .left-bottom .bottom-content.bottom3 {
         grid-column: 1 / span 3;
         justify-self: center;
-        padding-left: 0 !important;
+        border-left: none;
+        margin-right: 50px;
     }
 
 
@@ -799,9 +810,6 @@ input[type=text] {
 
     .brands-section {
         height: 146px;
-        padding-top: 39px !important;
-        padding-bottom: 39px !important;
-
     }
 
     .brands-section .brands-container {
@@ -828,10 +836,40 @@ input[type=text] {
         overflow: hidden;
     }
 
+    .display-section h2{
+        font-size: 36px;
+    }
+
+    
     /* ############ Browse Section############# */
+    .masonry h2{
+        font-size: 32px;
+        font-weight: 700;
+    }
 
     .browse-items{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
+
+    .browse-item{
+        width:100%;
+        height: 200px;
+    }
+
+    .browse-item img{
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .browse-item h3{
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 700;
+    }
+/* ########################################### */
 
     .update-container{
         height: 300px;
@@ -843,29 +881,39 @@ input[type=text] {
         padding-bottom: 28px;
     }
 
-    .update-head{
-        font-size: 32px;
-        line-height: 40px;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
+   .update-container .update-head{
+       
+        padding-top: 0;
+        padding-bottom: 0 ;
     }
 
-    .update-search{
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
+    .update-head h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .update-container .update-search{
+        padding-top: 0 ;
+        padding-bottom: 0;
         gap: 12px;
     }
 
+    .review-head h1{
+        font-size: 36px;
+    }
+
+/* ###################################### */
 
     .footer-boxes{
         grid-template-columns: repeat(2,1fr);
         gap:24px ;
+        padding-top: 150px;
     }
 
     .footer-boxes .first{
         grid-column: 1/ -1;
-        justify-self: center;
-        width: 50%;
+        width: 75%;
     }
 
     .foot{
@@ -873,4 +921,20 @@ input[type=text] {
         align-items: center;
     }
 
+
+
+    /* ############################ */
+
+    .review-head{
+        font-size: 32px;
+        text-align: center;
+    }
+    .slide-btn{
+        display: flex;
+    }
+
+    .customer-review{
+        width: 358px;
+        margin-bottom: 50px;
+    }
 }
