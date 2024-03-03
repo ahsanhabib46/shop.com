@@ -787,6 +787,10 @@ input[type=text] {
         gap: 12px;
     }
 
+    .left-bottom h3{
+        font-size: 24px;
+    }
+
     .left-bottom .bottom-content.bottom1 {
         margin-left: 30px;
         justify-self: center;
