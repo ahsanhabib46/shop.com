@@ -232,26 +232,16 @@ input[type=text] {
 /* ############### hero styling ########## */
 
 .hero-container {
-    padding: 0;
-    position: relative;
-    background: var(--light-color);
-    z-index: -33;
+    background-color: var(--light-color);
 }
 
-.hero-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.hero-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .left {
-    width: 45%;
-    padding-top: 103px;
-    padding-bottom: 116px;
+    width: 50%;
 }
 
 .left .left-bottom {
@@ -260,7 +250,7 @@ input[type=text] {
     justify-content: space-between;
 }
 
-.left-bottom .bottom-content:not(:first-child){
+.left-bottom .bottom-content:not(:first-child) {
     padding-left: 32px;
     border-left: 1px solid #ddd;
 }
@@ -280,20 +270,30 @@ input[type=text] {
     margin-bottom: 32px;
 }
 
+.right{
+    position: relative;
+}
+
+.right .hero-bg {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
 .star-container .star1 {
     width: 104px;
     height: 104px;
     position: absolute;
-    top: 86px;
-    right: 81px;
+    top: 15%;
+    right: 5%;
 }
 
 .star-container .star2 {
     width: 56px;
     height: 56px;
     position: absolute;
-    top: 300px;
-    right: 650px;
+    top: 50%;
+    left: 5%;
 }
 
 /* ################### Brands section########## */
@@ -698,6 +698,7 @@ input[type=text] {
 
 @media (max-width:600px) {
 
+
     .wrapper {
         max-width: 600px;
     }
@@ -724,12 +725,26 @@ input[type=text] {
         display: none;
     }
 
-    .nav-items {
-        justify-content:start;
-    }
 
     .left-img{
         margin-left: 96px;
     }
+/* ##################### Top ########### */
+    .top .first-para{
+        margin-left: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .top{
+        height: 34px;
+    
+    }
+    .top .cross{
+        display: none;
+    }
+
+
+    /* ############## Hero section############# */
+
 
 }
