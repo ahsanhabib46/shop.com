@@ -833,4 +833,44 @@ input[type=text] {
     .browse-items{
     }
 
+    .update-container{
+        height: 300px;
+    }
+    .update-container{
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 32px ;
+        padding-bottom: 28px;
+    }
+
+    .update-head{
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .update-search{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        gap: 12px;
+    }
+
+
+    .footer-boxes{
+        grid-template-columns: repeat(2,1fr);
+        gap:24px ;
+    }
+
+    .footer-boxes .first{
+        grid-column: 1/ -1;
+        justify-self: center;
+        width: 50%;
+    }
+
+    .foot{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
